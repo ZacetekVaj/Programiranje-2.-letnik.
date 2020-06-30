@@ -27,7 +27,7 @@ public class Okno{
 		okvir.setSize(SIRINA,VISINA);    
 		okvir.setLayout(null);    
 		okvir.setVisible(true);
-		okvir.setLocationRelativeTo(null); // is centered
+		okvir.setLocationRelativeTo(null);
 		okvir.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		//premikamo gumbe   
 		gumb1.setBounds((int) (SIRINA / 5), 90, 100, 30); 
