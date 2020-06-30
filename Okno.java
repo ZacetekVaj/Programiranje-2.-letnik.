@@ -18,33 +18,27 @@ public class Okno{
 	JLabel oznaka1 = new JLabel();
 	JLabel oznaka2 = new JLabel();
 	
-	JButton gumb1 = new JButton("Ok");  
-	JButton gumb2 = new JButton("Reset");   
+	JButton gumb1 = new JButton("vsAi");  
+	JButton gumb2 = new JButton("vsPlayer");   
 	
 	
 	public Okno() {
-		// frame settings
 		frame.getContentPane().setBackground(Color.WHITE);
 		frame.setSize(SIRINA,VISINA);    
 		frame.setLayout(null);    
 		frame.setVisible(true);
-		frame.setLocationRelativeTo(null); // is centered
+		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		   
-		gumb1.setBounds((int) (SIRINA / 5), 90, 100, 30); // lahko premikas gumb z prvimi dvemi koordinatami, z zadnjimi dvemi velikost
+		gumb1.setBounds((int) (SIRINA / 5), 90, 100, 30); 
 		gumb2.setBounds((int) (SIRINA / 5), 150, 100, 30); 
-		
-		// labels: text and bounds
-		oznaka1.setText("vs Ai");
+		 
 		oznaka1.setBounds(SIRINA/3, 60, 100, 30);
-		
-		oznaka2.setText("vs Player");
 		oznaka2.setBounds(SIRINA/3, 120, 100, 30);
 		
 
 
 		gumb1.addActionListener(new ActionListener() {
-			// gets info from text fields, and updates data
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 					new KrizecKrozecGrafika1();
@@ -52,13 +46,11 @@ public class Okno{
 	      });
 		
 		gumb2.addActionListener(new ActionListener() {
-			// resets all data
 			public void actionPerformed(ActionEvent arg0) {
 					new KrizecKrozecGrafika2();
 			}          
 		  });
 
-		// add everything on frame
 		frame.add(oznaka1); frame.add(oznaka2);
 		frame.add(gumb1);     
 		frame.add(gumb2);
