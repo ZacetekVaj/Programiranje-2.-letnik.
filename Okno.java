@@ -18,8 +18,8 @@ public class Okno{
 	JLabel oznaka1 = new JLabel();
 	JLabel oznaka2 = new JLabel();
 	
-	JButton gumb1 = new JButton("vsAi");  
-	JButton gumb2 = new JButton("vsPlayer");   
+	JButton gumb1 = new JButton("vs Ai");  
+	JButton gumb2 = new JButton("vs Player");   
 	
 	
 	public Okno() {
